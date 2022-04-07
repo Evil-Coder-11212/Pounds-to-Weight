@@ -1,0 +1,15 @@
+@media screen and (max-width: 610px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 260px){
+    .inputs-container>input{
+        width: 95%;
+    }
+
+    .container>button{
+        width: 95%;
+    }
+}

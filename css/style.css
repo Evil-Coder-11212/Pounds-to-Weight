@@ -1,0 +1,93 @@
+:root {
+  --primary-color: rgb(26, 26, 26);
+  --secondary-color: rgb(236, 236, 236);
+  --font-family: Nunito, sans-serif;
+  --box-shadow: rgb(0, 0, 0) 1px 1px 3px 0px inset, rgba(48, 48, 48, 0.5) -1px -1px 3px 1px inset;
+  --all-transition: transform ease-in-out 0.3s 0s;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-family);
+}
+
+.main-content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.container{
+  width: 600px;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+}
+
+.inputs-container{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.inputs-container>input{
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  border: none;
+  padding-left: 15px;
+}
+
+.container>button{
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: var(--all-transition);
+}
+
+.container>p{
+  color: var(--secondary-color);
+  font-weight: bold
+}
+
+/* Animations */
+.container>button:hover{
+  transform: scale(1.08);
+}
+
+.container>button:active{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+/* nth child */
+.inputs-container>input::placeholder{
+  color: var(--secondary-color);
+}
